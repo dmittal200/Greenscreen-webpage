@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+</script>
+<script type="text/javascript" src="green.js"></script>
+<link type="text/css" rel="stylesheet" href="green.css"/>
+</head>
+<body>
+<h1>Green Screen Web Page</h1>
+<p class="textclr">Choose one image with green background as (foreground image) and other will be used as a background after you click on create composite. </p>
+<hr>
+
+<canvas id = "fgcan">
+</canvas>
+<canvas id = "bgcan">
+</canvas>
+
+<p>
+Foreground: <input type="file" multiple="false" accept="image/*" id="fgfile" onchange="loadForegroundImage()" >
+</p>
+
+<p>
+Background: <input type="file" multiple="false" accept="image/*" id="bgfile" onchange="loadBackgroundImage()" >
+</p>
+
+<p>
+<input type="button" value="Create Composite" onclick="doGreenScreen()" >
+<input type="button" value="Clear Canvases" onclick="clearCanvas()" >
+</p>
+</body>
+</html>
